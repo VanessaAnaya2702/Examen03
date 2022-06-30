@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/nota"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bloc"
+        app:tint="#333"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="80dp">
+
+
+        <EditText
+            android:id="@+id/edtTituloLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Libro"
+            android:maxLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+        <EditText
+            android:id="@+id/edtAutorLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor"
+            android:maxLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/edtCategoriaLibro"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:hint="Género"
+                android:maxLines="1"
+                android:inputType="textCapWords"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+
+            <EditText
+                android:id="@+id/edtEditorialLibro"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:hint="Editorial"
+                android:maxLines="1"
+                android:inputType="textCapWords"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtDescripcionLibro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="Resumen"
+            android:minLines="3"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterLibro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Guardar"
+            android:backgroundTint="#4A3288"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
